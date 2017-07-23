@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
-using Microsoft.VisualStudio.TestTools.UITest.Extension;
 using Microsoft.VisualStudio.TestTools.UITesting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UITest.Extension;
 
 namespace IntelliTect.TestTools.WindowsTestWrapper
 {
