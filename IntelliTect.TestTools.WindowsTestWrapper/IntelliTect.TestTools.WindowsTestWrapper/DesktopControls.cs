@@ -147,6 +147,12 @@ namespace IntelliTect.TestTools.WindowsTestWrapper
 
         protected T FindControlBySibling<T>(string control, Func<UITestControl, T> controlType, UITestControl parent = null)
         {
+            if (control == null)
+                throw new ArgumentNullException(nameof(control));
+            if (controlType == null)
+                throw new ArgumentNullException(nameof(controlType));
+            parent = parent ?? FindWinWindowUnderTest();
+            T found = controlType(parent);
             return null;
         }
 
